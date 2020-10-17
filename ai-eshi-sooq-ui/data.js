@@ -1,4 +1,4 @@
-[{
+export const mocData=[{
     "id": 1,
     "post_name": "Passport",
     "post_img": "Honda",
