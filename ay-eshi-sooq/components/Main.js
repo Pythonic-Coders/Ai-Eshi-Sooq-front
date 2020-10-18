@@ -9,22 +9,46 @@ export default function Main(props) {
                 <div className={styles.mainHeroContainer}>
                     <div className={styles.mainHeroTitle}></div>
                 </div>
-                {/* <div className={styles.mainHeroContainer1}>
-                    <div className={styles.mainHeroTitle}></div>
-                </div>
-                <div className={styles.mainHeroContainer2}>
-                    <div className={styles.mainHeroTitle}></div>
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a> */}
             </section>
             <div className={styles.mainDivTitle}>
                 <h1 className={styles.mainTitle}>Products</h1>
             </div>
             <section className={styles.mainContents}>
-                <div className={styles.mainItmes}>
-                    <i class="fas fa-car"></i>
-                    {mockData.map(data => <Products item={data} />)}
+                <div className={styles.mainDivContents}>
+                    <div className={styles.mainCategories}>
+                        <Link href="/Accessories">
+                            <h1 className={styles.mainTitle1}>Accessories</h1>
+                        </Link>
+                    </div>
+                    <div className={styles.mainCategories1}>
+                        <Link href="/Cars">
+                            <h1 className={styles.mainTitle1}>Cars</h1>
+                        </Link>
+                    </div>
+                </div>
+                <div className={styles.mainDivContents}>
+                    <div className={styles.mainCategories2}>
+                        <Link href="/Clothes">
+                            <h1 className={styles.mainTitle1}>Clothes</h1>
+                        </Link>
+                    </div>
+                    <div className={styles.mainCategories3}>
+                        <Link href="/Electronics">
+                            <h1 className={styles.mainTitle1}>Electronics</h1>
+                        </Link>
+                    </div>
+                </div>
+                <div className={styles.mainDivContents}>
+                    <div className={styles.mainCategories4}>
+                        <Link href="/Houses">
+                            <h1 className={styles.mainTitle1}>Houses</h1>
+                        </Link>
+                    </div>
+                    <div className={styles.mainCategories5}>
+                        <Link href="/Shose">
+                            <h1 className={styles.mainTitle1}>Shoes</h1>
+                        </Link>
+                    </div>
                 </div>
             </section>
             <script src="../style.js"></script>
@@ -32,13 +56,13 @@ export default function Main(props) {
 
     )
 }
-function Products(props) {
-    return (
-        <div className={styles.mainDiv}>
-            <img src={props.item.post_img} className={styles.mainImg} />
-            <h1 className={styles.mainProductName}>{props.item.post_name}</h1>
-            <p className={styles.mainAboutProduct}>{props.item.post_description}</p>
-            <p className={styles.mainPrice}>{props.item.price}</p>
-        </div>
-    )
-}
+// function Products(props) {
+//     return (
+//         <div className={styles.mainDiv}>
+//             <img src={props.item.post_img} className={styles.mainImg} />
+//             <h1 className={styles.mainProductName}>{props.item.post_name}</h1>
+//             <p className={styles.mainAboutProduct}>{props.item.post_description}</p>
+//             <p className={styles.mainPrice}>{props.item.price}</p>
+//         </div>
+//     )
+// }

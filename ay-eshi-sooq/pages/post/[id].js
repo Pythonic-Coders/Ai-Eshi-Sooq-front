@@ -3,7 +3,6 @@ import styles from '../../styles/Styles.module.css'
 export default function ProductListPage(props){
     return(
         <>
-        
         <h1  className={styles.headerpage} > {props.resData.post_title} </h1>
 
     {<ProductDiv item={props.resData} /> } 
@@ -15,9 +14,9 @@ export default function ProductListPage(props){
 
 function ProductDiv(props){
     return(
-       
+
         <section className={styles.PostSection}>
-        
+
 
          <img src={props.item.post_img} />
          <p><label>Description :</label></p>
@@ -27,7 +26,6 @@ function ProductDiv(props){
 
 
          </section>
-      
     );
 }
 
@@ -36,9 +34,7 @@ export  async function getServerSideProps(context){
     console.log(id)
     const res=await fetch(`https://ai-eshi-sooq-api.herokuapp.com/api/v1/post/${id}`)
     const dataObj=await res.json();
-   
+
 
     return{ props:{resData : dataObj }  };
 }
-
-

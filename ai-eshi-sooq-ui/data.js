@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+export const mockData = [{
+=======
 export const mocData=[{
+>>>>>>> 3baef418b459ae8523c4557cf84f450c57845a3a
     "id": 1,
     "post_name": "Passport",
     "post_img": "Honda",
