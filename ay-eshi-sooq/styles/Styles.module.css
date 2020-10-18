@@ -1,0 +1,387 @@
+.header{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(25, 42, 70, 0.13) -8px 12px 18px 0px;
+    height: 100px;
+    top: 0;
+    position: sticky;
+}
+.headerContent{
+    display: flex;
+    height: 100px;
+}
+.headerLogoLink{
+    margin: 0 80px;
+}
+.headerLogo{
+    height: 160%;
+    width: 100%;
+    margin: -28px 10px;
+}
+.headerNav{
+    margin: 35px 625px;
+    margin-right: 5px;
+}
+.headerLink{
+    color: rgba(0, 0, 0, .5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 100px 10px;
+    text-decoration: none;
+}
+.headerLink:hover{
+    border-bottom: 2px solid #e78200;
+    border-top: 2px solid #e78200;
+    color: #e78200;
+    font-size: 18px;
+    font-weight: normal;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdownContent {
+    border-top: 5px solid #e78200;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    margin: 0px 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.headerLink1{
+    color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px 10px;
+    text-decoration: none;
+}
+.headerLink1:hover{
+    border-bottom: 2px solid #e78200;
+    border-top: 2px solid #e78200;
+    color: #e78200;
+    font-size: 18px;
+    font-weight: normal;
+}
+.dropdownContent .headerLink1 {
+    color: rgba(0, 0, 0, .5);
+    font-size: 18px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdownContent .headerLink1:hover {
+    background-color: #f5f5f5;
+    color: #e78200;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.dropdown:hover .dropdownContent {display: block;}
+.title{
+    margin: 50px;
+}
+.mainHeroContainer{
+    background-image: url(https://images.pexels.com/photos/2954405/pexels-photo-2954405.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-bottom: 50px;
+    margin-top: -70px;
+    /* width: 100%; */
+}
+.mainHeroContainer{
+    height: 500px;
+    margin-bottom: 50px;
+    margin-top: -70px;
+}
+.mainHeroContainer1{
+    background-image: url(https://images.pexels.com/photos/2433164/pexels-photo-2433164.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-bottom: 50px;
+    margin-top: -70px;
+    /* width: 100%; */
+}
+.mainHeroContainer2{
+    background-image: url(https://images.pexels.com/photos/4968391/pexels-photo-4968391.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-bottom: 50px;
+    margin-top: -70px;
+    /* width: 100%; */
+}
+/* .mainHeroImg{
+    height: 500px;
+    width: 100%;
+} */
+.mainHeroTitle{
+    background-color:rgba(3, 3, 3, 0.5);
+    height: 500px;
+    margin-bottom: 50px;
+    margin-top: -50px;
+    width: 100%;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.mainDivTitle{
+    margin-bottom: -82px;
+}
+.mainTitle{
+    color: #e78200;
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+.mainContents{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(25, 42, 70, 0.13) -8px 12px 18px 0px;
+    margin: 50px 150px;
+    /* height: 500px; */
+    /* width: 80%; */
+}
+.mainItmes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+.mainImg{
+    height: 160px;
+    /* margin: 10px; */
+    width: 242px;
+    border-top-right-radius: 20px;
+}
+.mainDiv{
+    /* border: 1px solid; */
+    margin: 50px 20px;
+    height: 300px;
+    /* width: 80%; */
+    background-color: #f5f5f5;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: rgba(25, 42, 70, 0.13) -8px 12px 18px 0px;
+}
+.mainProductName{
+    color: #e78200;
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    margin: 0 5px;
+}
+.mainAboutProduct{
+    color: rgba(0, 0, 0, .5);
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    margin: 0 5px;
+}
+.mainPrice{
+    color:  rgba(3, 3, 3, 0.9);
+    font-family: 'Mukta', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0 5px;
+}
+.mainAboutTitle{
+    color: #e78200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+.mainAboutTitle1{
+    color: #e78200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+.mainContent{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(25, 42, 70, 0.13) -8px 12px 18px 0px;
+    margin: 50px 150px;
+    height: 288px;
+    width: 80%;
+}
+.mainMembers{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 50px;
+}
+.mainAboutDiv{
+    background-color: #f5f5f5;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: rgba(25, 42, 70, 0.13) -8px 12px 18px 0px;
+    height: 400px;
+    margin: 50px 20px;
+    width: 80%;
+}
+.mainAboutDiv:hover{
+    height: 400px;
+    margin: 80px 20px;
+}
+.mainMemberPhoto{
+    height: 238px;
+    width: 238px;
+    border-top-right-radius: 10px;
+}
+.mainContactIcon{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.mainContactIcon:hover{
+    background-color: #e78200;
+}
+.mainContactIcon1{
+    border-radius: 50%;
+    height: 57px;
+    width: 57px;
+    margin: -3.5px 0;
+}
+.mainContactIcon1:hover{
+    background-color: #e78200;
+}
+.mainAboutDiv{
+    color: rgba(0, 0, 0, .5);
+    font-size: 18px;
+    text-align: center;
+}
+.footer{
+    background-color: rgba(3, 3, 3, 0.9);
+    height: 300px;
+    margin-bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+}
+.footerContent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerImg{
+    margin: 42px 100px;
+}
+.footerDiv{
+    border-right: 1px solid rgba(25, 42, 70, 0.13);
+    height: 100px;
+    margin: 15px 100px;
+}
+.footerNav{
+    margin: 30px 70px;
+}
+.footerTitle{
+    color: #e78200;
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 0;
+    padding: 0 8px;
+    text-decoration: none;
+}
+.footerLink{
+    color: #f5f5f5;
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: -8px 0;
+    padding: 0 8px;
+    text-decoration: none;
+    width: 82px;
+}
+.footerLink:hover{
+    color: #e78200;
+}
+.footerInfo{
+    color: #f5f5f5;
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 1px -10px;
+    /* margin: -30px 35px; */
+    padding: 0 8px;
+    text-decoration: none;
+}
+.footerContactInfo{
+    display: flex;
+    width: 242px;
+}
+.footerContactImg{
+    height: 10%;
+    width: 10%;
+    margin: 0 8px;
+}
+.footerContactImg1{
+    width: 12%;
+    height: 12%;
+    margin: 0 5px;
+}
+.footerLinks{
+    margin: 0 150px;
+}
+.footerSocialPart{
+    margin: 68px -25px;
+}
+.footerSocialIcons{
+    margin: 25px;
+}
+.footerIcon{
+    border-radius: 50%;
+    cursor: pointer;
+    height: 35px;
+    margin: 50px 10px;
+    width: 35px;
+}
+.footerIcon:hover{
+    background-color: #f5f5f5;
+}
+.footerSocialIcon{
+    border-radius: 50%;
+    height: 30px;
+    margin: 0 5px;
+    width: 30px;
+}
+.footerSocialIcon:hover{
+    background-color: #e78200;
+}
+.footerDiv{
+    border-top: 1px solid #e78200;
+    height: 0;
+    margin: -50px 50px;
+    margin-bottom: 2px;
+}
+.footerPara{
+    color: #f5f5f5;
+    font-family: 'Mukta', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}

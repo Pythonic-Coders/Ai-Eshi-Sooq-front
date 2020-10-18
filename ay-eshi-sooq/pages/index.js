@@ -5,11 +5,9 @@ import Footer from '../components/Footer'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
-
 export default function Home() {
-  
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <title>Ai Eshi Sooq</title>
         <link rel="icon" href="/favicon.ico" />
@@ -18,7 +16,6 @@ export default function Home() {
       <Header/>
       <Main/>
       <Footer/>
-
     </div>
   )
 }
