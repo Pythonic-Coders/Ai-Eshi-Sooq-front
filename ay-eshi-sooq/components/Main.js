@@ -40,7 +40,11 @@ export default function Main(props) {
                 </div>
                 <div className={styles.mainDivContents}>
                     <div className={styles.mainCategories4}>
-                        <Link href="/Houses">
+                        <Link href={{
+                            pathname: '/[productListPage]',
+                            query: { productListPage: 'Houses' }
+                        }}
+                        >
                             <h1 className={styles.mainTitle1}>Houses</h1>
                         </Link>
                     </div>

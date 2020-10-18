@@ -37,16 +37,15 @@ export default function Header() {
                             <Link href={{
                                 pathname: '/[productListPage]',
                                 query: { productListPage: 'Houses' }
-                            }}
-                            >
+                            }}>
                                 <a className={styles.headerLink1}>Houses</a>
                             </Link>
                             <Link href="/shoes">
                                 <a className={styles.headerLink1}>Shoes</a>
                             </Link>
-                            <Link href="/watches">
+                            {/* <Link href="/watches">
                                 <a className={styles.headerLink1}>Watches</a>
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                     <Link href="/login">
