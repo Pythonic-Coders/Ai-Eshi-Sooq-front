@@ -5,9 +5,9 @@ export default function ProductListPage(props){
         <>
         
     <h1>read more</h1>
- 
+
     {<ProductDiv item={props.resData} /> } 
-    
+
     </>
     ) 
 }
@@ -17,11 +17,13 @@ function ProductDiv(props){
     return(
         <>
         <div>
+
          <p>{props.item.post_title}</p>
          <img src={props.item.post_img} />
          <p>{props.item.post_description}</p>
          <p>{props.item.price}</p>
          <p>{props.item.phone_number}</p>
+
 
       </div>
       </>

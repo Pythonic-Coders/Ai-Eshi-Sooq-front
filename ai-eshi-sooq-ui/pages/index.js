@@ -1,6 +1,7 @@
 import styles from '../styles.module.css'
 import Link from 'next/link'
 // import Link  from 'next/router'
+
 export default function Home() {
   
   return (
