@@ -20,7 +20,9 @@ function ProductDiv(props){
     return(
         <>
       <p>{props.item.post_title}</p>
-      <p>{props.item.post_img}</p>
+
+      <img src={props.item.post_img} /> 
+
       <p>{props.item.price}</p>
 
       {/* <p>{props.item.id}</p>
