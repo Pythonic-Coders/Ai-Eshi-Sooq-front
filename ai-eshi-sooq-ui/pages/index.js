@@ -7,27 +7,16 @@ export default function Home() {
     
     <div className={styles.hello}>
       <p>Hello World</p>
-      {/* <Link href="/productListPage" >
-        <a>productListPage</a>
-      </Link> */}
-<Link
-  href={{
-    pathname: '/productListPage',
-    query:{ category: 'cars'}
-  }}
-> Cars gener </Link>
+      
 
-{/* <Link href={{
+            <Link href={{
               pathname: '/[productListPage]',
-              query:{ productListPage: 'cars'}
+              query:{ productListPage: 'Houses'}
             }}
-            ></Link> */}
-       {/* <Link to={'/productListPage'} */}
-      {/* <Link href="/productListPage" params="hous" >
-                <a>productListPage</a>
-            </Link> */}
-      {/* <Route exact path="/movie/:id" component={MovieDetailsContainer} /> */}
-      {/* <Link to={{ pathname: '/productListPage', query: { foo: 'car'} }}>My route</Link> */}
+            >
+                <a>Houses</a>
+            </Link>
+
     </div>
   )
 }
