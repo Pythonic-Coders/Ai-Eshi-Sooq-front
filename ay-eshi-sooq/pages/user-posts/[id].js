@@ -1,3 +1,4 @@
+import styles from '../../styles/updatePosts.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import axios from 'axios'
@@ -104,42 +105,48 @@ export default class UserPostDetails extends React.Component{
 
     return (
         <>
-            <form onSubmit={() => this.updateHandler(this.props.userpost.id)}>
+        <div className={styles.global}>
+        <section className={styles.mainContent}>
+        <img src={this.state.post_img}/>
+            <form onSubmit={() => this.updateHandler(this.props.userpost.id)} >
                 <label>
                     Ads Title:
-                    <input type='text' name='post_title' value={this.state.post_title} onChange={this.inputChanged}/>
                 </label>
+                    <input type='text' name='post_title' value={this.state.post_title} onChange={this.inputChanged}/>
                 <br/>
                 <label>
                     Category:
-                    <input type='text' name='category' value={this.state.category} onChange={this.inputChanged}/>
                 </label>
+                    <input type='text' name='category' value={this.state.category} onChange={this.inputChanged}/>
                 <br/>
                 <label>
                     Image Link:
-                    <input type='text' name='post_img' value={this.state.post_img} onChange={this.inputChanged}/>
                 </label>
+                    <input type='text' name='post_img' value={this.state.post_img} onChange={this.inputChanged}/>
                 <br/>
                 <label>
                     Description:
+                </label>
                     <textarea name='post_description' rows="4" cols="50" value={this.state.post_description} onChange={this.inputChanged}>
                     </textarea>
-                </label>
                 <br/>
                 <label>
                     Price:
-                    <input type='text' name='price' value={this.state.price} onChange={this.inputChanged}/>
                 </label>
+                    <input type='text' name='price' value={this.state.price} onChange={this.inputChanged}/>
                 <br/>
                 <label>
                     Phone Number
-                    <input type='text' name='phone_number' value={this.state.phone_number} onChange={this.inputChanged}/>
                 </label>
+                    <input type='text' name='phone_number' value={this.state.phone_number} onChange={this.inputChanged}/>
                 <br/>
-                <input type='submit' value='Update'/>
+                <button type='submit' value='Update' className={styles.update_button}>Update</button>
+            <button onClick={() => this.deleteHandler(this.props.userpost.id)}   className={styles.update_button}>Delete</button>
+            
             </form>
 
-            <button onClick={() => this.deleteHandler(this.props.userpost.id)}>Delete</button>
+            </section>
+            </div>
         </>
     )
 }
