@@ -1,5 +1,6 @@
 import styles from '../styles/Styles.module.css'
 import Link from 'next/link'
+import LogOut from '../pages/logout'
 
 export default function Header() {
     let isLoggedIn = false;
@@ -14,7 +15,7 @@ export default function Header() {
                 <div className={styles.headerLogoLink}>
                     <Link href="/">
                         <a>
-                            <img src="https://www.freelogodesign.org/file/app/client/thumb/60d768a5-2396-4083-a549-3de683eaf622_200x200.png?1602766316569" className={styles.headerLogo} />
+                            <img src="https://www.freelogodesign.org/file/app/client/thumb/5c9c1437-f18a-4c54-a3db-c9bdf801b09d_200x200.png?1603095724391" className={styles.headerLogo} />
                         </a>
                     </Link>
                 </div>
@@ -28,16 +29,17 @@ export default function Header() {
                     <div className={styles.dropdown}>
                         <a className={styles.headerLink1}>Categories</a>
                         <div className={styles.dropdownContent}>
-                            <Link href="/accessories">
-                                <a className={styles.headerLink1}>Accessories</a>
+
+
+                            <Link href="/ComputersAndLaptops"  >
+                                <a className={styles.headerLink1}>Computers and laptops</a>
                             </Link>
-                            <Link href="/cars">
+
+                            <Link href="/Cars" >
                                 <a className={styles.headerLink1}>Cars</a>
                             </Link>
-                            <Link href="/clothes">
-                                <a className={styles.headerLink1}>Clothes</a>
-                            </Link>
-                            <Link href="/electronics">
+                            
+                            <Link href="/Electronics">
                                 <a className={styles.headerLink1}>Electronics</a>
                             </Link>
                             <Link href={{
@@ -46,22 +48,33 @@ export default function Header() {
                             }}>
                                 <a className={styles.headerLink1}>Houses</a>
                             </Link>
-                            <Link href="/shoes">
-                                <a className={styles.headerLink1}>Shoes</a>
+                            <Link href="/HouseTools">
+                                <a className={styles.headerLink1}>House Tools</a>
                             </Link>
-                            {/* <Link href="/watches">
-                                <a className={styles.headerLink1}>Watches</a>
-                            </Link> */}
+                            <Link href="/Furniture">
+                                <a className={styles.headerLink1}>Furniture</a>
+                            </Link>
                         </div>
                     </div>
                     
                     {(() => {
                         if (isLoggedIn) {
-                        return (
-                            <Link href="/user-profile">
-                                <a className={styles.headerLink}>{username}</a>
-                            </Link>
-                        )
+                            return (
+                                // <Link href="/user-profile">
+                                //     <a className={styles.headerLink}>{username}</a>
+                                // </Link>
+                                <div className={styles.dropdown}>
+                                <a className={styles.headerLink1}>{username}</a>
+                                <div className={styles.dropdownContent}>
+                                    <Link href="/profile">
+                                        <a className={styles.headerLink1}>Profile</a>
+                                    </Link>
+                                    <Link href="/">
+                                        <a className={styles.headerLink1}><LogOut/></a>
+                                    </Link>
+                                </div>
+                            </div>
+                            )
                         }else {
                             return (
                                 <>

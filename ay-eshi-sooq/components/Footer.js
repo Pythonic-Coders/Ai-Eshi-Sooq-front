@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className={styles.footerImgLink}>
                     <Link href="/">
                         <a>
-                            <img src="https://www.freelogodesign.org/file/app/client/thumb/bd1d811c-27ab-4ae3-b645-fdb6f4f32ece_200x200.png?1602769288376" className={styles.footerImg} />
+                            <img src="https://www.freelogodesign.org/file/app/client/thumb/5c9c1437-f18a-4c54-a3db-c9bdf801b09d_200x200.png?1603095724391" className={styles.footerImg} />
                         </a>
                     </Link>
                 </div>
