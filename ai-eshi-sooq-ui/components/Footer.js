@@ -37,6 +37,9 @@ export default function Footer() {
                     <Link href="/shoes">
                         <a className={styles.footerLink}>Shoes</a>
                     </Link>
+                    <Link href="/watches">
+                        <a className={styles.footerLink}>Watches</a>
+                    </Link>
                 </nav>
                 <nav className={styles.footerNav}>
                     <h4 className={styles.footerTitle}>Contact Us</h4>

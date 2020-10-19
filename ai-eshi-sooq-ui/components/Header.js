@@ -2,12 +2,6 @@ import styles from '../styles/Styles.module.css'
 import Link from 'next/link'
 
 export default function Header() {
-    let isLoggedIn = false;
-    let username = ''
-    if (process.browser){
-        isLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));
-        username = JSON.parse(localStorage.getItem('username'));
-    }
     return (
         <header className={styles.header}>
             <div className={styles.headerContent}>
@@ -43,40 +37,24 @@ export default function Header() {
                             <Link href={{
                                 pathname: '/[productListPage]',
                                 query: { productListPage: 'Houses' }
-                            }}>
+                            }}
+                            >
                                 <a className={styles.headerLink1}>Houses</a>
                             </Link>
                             <Link href="/shoes">
                                 <a className={styles.headerLink1}>Shoes</a>
                             </Link>
-                            {/* <Link href="/watches">
+                            <Link href="/watches">
                                 <a className={styles.headerLink1}>Watches</a>
-                            </Link> */}
+                            </Link>
                         </div>
                     </div>
-                    
-                    {(() => {
-                        if (isLoggedIn) {
-                        return (
-                            <Link href="/user-profile">
-                                <a className={styles.headerLink}>{username}</a>
-                            </Link>
-                        )
-                        }else {
-                            return (
-                                <>
-                                    <Link href="/login">
-                                        <a className={styles.headerLink}>Login</a>
-                                    </Link>
-                                    <Link href="/signup">
-                                        <a className={styles.headerLink}>Signup</a>
-                                    </Link>
-                                </>
-                            )
-                          }
-                        })()}
-                    
-                    
+                    <Link href="/login">
+                        <a className={styles.headerLink}>Login</a>
+                    </Link>
+                    <Link href="/signup">
+                        <a className={styles.headerLink}>Signup</a>
+                    </Link>
                 </nav>
             </div>
         </header>

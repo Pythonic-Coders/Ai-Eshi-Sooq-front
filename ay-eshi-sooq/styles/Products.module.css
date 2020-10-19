@@ -1,0 +1,48 @@
+.mainPost{
+    display: flex;
+}
+.mainImg{
+    border-bottom-left-radius: 20px;
+    height: 300px;
+    width: 50%;
+}
+.mainInfo{
+    margin: -15px 20px;
+}
+.mainTitle{
+    color: #e78200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+.mainAboutProduct{
+    color: rgba(0, 0, 0, .5);
+    display: -webkit-box;
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0 5px;
+    margin-bottom: 2px;
+}
+.price{
+    color:  rgba(3, 3, 3, 0.9);
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 5px;
+}
+.mainPrice{
+    color: #e78200;
+}
+.phone{
+    color:  rgba(3, 3, 3, 0.9);
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 5px;
+}
+.mainPhone{
+    color: #e78200;
+    font-weight: normal;
+}
