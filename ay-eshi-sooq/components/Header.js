@@ -57,11 +57,22 @@ export default function Header() {
                     
                     {(() => {
                         if (isLoggedIn) {
-                        return (
-                            <Link href="/user-profile">
-                                <a className={styles.headerLink}>{username}</a>
-                            </Link>
-                        )
+                            return (
+                                // <Link href="/user-profile">
+                                //     <a className={styles.headerLink}>{username}</a>
+                                // </Link>
+                                <div className={styles.dropdown}>
+                                <a className={styles.headerLink1}>{username}</a>
+                                <div className={styles.dropdownContent}>
+                                    <Link href="/profile">
+                                        <a className={styles.headerLink1}>Profile</a>
+                                    </Link>
+                                    <Link href="/logout">
+                                        <a className={styles.headerLink1}>Logout</a>
+                                    </Link>
+                                </div>
+                            </div>
+                            )
                         }else {
                             return (
                                 <>
