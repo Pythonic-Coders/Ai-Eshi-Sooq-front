@@ -31,16 +31,29 @@
 }
 .mainTitle{
     color: #e78200;
+    font-family: 'Cinzel', serif;
     font-size: 30px;
     text-align: center;
 }
 .mainIntro{
     color: rgba(3, 3, 3, .5);
+    font-family: 'Mukta', sans-serif;
     font-size: 20px;
-    padding: 0 37px;
+    line-height: 1.2;
+    padding: 0 92px;
+}
+.mainError{
+    color: #e78200;
+    font-family: 'Mukta', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
 }
 .mainForm{
-    padding: 20px 80px;
+    padding: 20px 90px;
+}
+.mainForm1{
+    padding: 20px 105px;
 }
 .mainInputs{
     height: 30px;
@@ -63,11 +76,54 @@
     margin: 5px 50px;
 }
 .mainBtn:hover{
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     border: 1px solid rgba(3, 3, 3, .5);
     color: rgba(3, 3, 3, .5);
 }
+.mainBtn1{
+    background-color: #ffffff;
+    border: 1px solid #e78200;
+    border-radius: 5px;
+    color: #e78200;
+    cursor: pointer;
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    height: 30px;
+    width: 150px;
+    margin: 5px 100px;
+}
+.mainBtn1:hover{
+    background-color: #ffffff;
+    border: 1px solid rgba(3, 3, 3, .5);
+    color: rgba(3, 3, 3, .5);
+}
+.mainBtn2{
+    background-color: #ffffff;
+    border: 1px solid rgba(3, 3, 3, 0.9);
+    border-radius: 5px;
+    color: rgba(3, 3, 3, 0.9);
+    cursor: pointer;
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    height: 30px;
+    width: 250px;
+    margin: 5px 156px;
+}
+.mainBtn2:hover{
+    background-color: #ffffff;
+    border: 1px solid  #e78200;
+    color:  #e78200;
+}
+.mainNewAccount{
+    color: rgba(3, 3, 3, .5);
+    font-family: 'Mukta', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    margin: -5px 220px 5px;
+    width: 120px;
+}
 .footerPara{
     color: rgba(3, 3, 3, .5);
+    font-family: 'Mukta', sans-serif;
     text-align: center;
 }

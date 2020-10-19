@@ -2,6 +2,12 @@ import styles from '../styles/Styles.module.css'
 import Link from 'next/link'
 
 export default function Header() {
+    let isLoggedIn = false;
+    let username = ''
+    if (process.browser){
+        isLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));
+        username = JSON.parse(localStorage.getItem('username'));
+    }
     return (
         <header className={styles.header}>
             <div className={styles.headerContent}>
@@ -48,12 +54,29 @@ export default function Header() {
                             </Link> */}
                         </div>
                     </div>
-                    <Link href="/login">
-                        <a className={styles.headerLink}>Login</a>
-                    </Link>
-                    <Link href="/signup">
-                        <a className={styles.headerLink}>Signup</a>
-                    </Link>
+                    
+                    {(() => {
+                        if (isLoggedIn) {
+                        return (
+                            <Link href="/user-profile">
+                                <a className={styles.headerLink}>{username}</a>
+                            </Link>
+                        )
+                        }else {
+                            return (
+                                <>
+                                    <Link href="/login">
+                                        <a className={styles.headerLink}>Login</a>
+                                    </Link>
+                                    <Link href="/signup">
+                                        <a className={styles.headerLink}>Signup</a>
+                                    </Link>
+                                </>
+                            )
+                          }
+                        })()}
+                    
+                    
                 </nav>
             </div>
         </header>

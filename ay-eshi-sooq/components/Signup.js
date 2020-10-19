@@ -24,16 +24,17 @@ export default class Signup extends React.Component {
         })
             .then(data => data.json())
             .then(data => {
-                if (data) {
+                if (data.ok) {
 
                     window.location.href = '/login';
                     console.log(data)
                 } else {
-                    throw new Error('Something went wrong');
+                    throw new Error('this username already taken');
                 }
             }).catch((error) => {
                 console.error(error)
-                alert(error);
+                // alert(error);
+                document.getElementById('signErorr').innerHTML = error
             })
 
     }
@@ -52,8 +53,9 @@ export default class Signup extends React.Component {
                 <section className={styles.mainSinupContent}>
                     <div className={styles.mainSinup}>
                         {/* <img src="https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/ecom-options-og.jpg"/> */}
-                        <h1 className={styles.mainTitle}>Sign Up</h1>
+                        <h1 className={styles.mainTitle}>Ay Eshi Sooq</h1>
                         <p className={styles.mainIntro}>To be one of our family and be ableto display your things for sale, You've to sign up first</p>
+                        <p id='signErorr' className={styles.mainError}></p>
                         <form className={styles.mainForm}>
                             {/* <label>
                                 Username: */}
