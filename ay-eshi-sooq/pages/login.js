@@ -35,13 +35,14 @@ class Login extends React.Component {
             window.location.href = '/';
             }else{
                 // alert('error');
-                throw new Error('Something went wrong');
+                throw new Error('Incorrect password or username entered. Please try again.');
             }
 
 
         }).catch((error) => {
             // console.error(error)
-            alert(error);
+            // alert(error);
+            document.getElementById('logErorr').innerHTML = error
         })
     }
 
@@ -57,7 +58,7 @@ class Login extends React.Component {
         return(
             <div>
                 <h1>Log in Page</h1>
-
+                <p id='logErorr'></p>
                 <form>
                     <label>
                         Username:

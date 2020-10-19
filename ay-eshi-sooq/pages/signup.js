@@ -22,16 +22,17 @@ export default class Signup extends React.Component {
         })
         .then(data => data.json())
         .then(data =>{
-            if(data){
+            if(data.ok){
 
                 window.location.href = '/login';
                 console.log(data)
             }else{
-                throw new Error('Something went wrong');
+                throw new Error('this username already taken ');
             }
         }).catch((error) => {
             console.error(error)
-            alert(error);
+            // alert(error);
+            document.getElementById('signErorr').innerHTML = error
         })
             
     }
@@ -48,7 +49,7 @@ export default class Signup extends React.Component {
         return(
             <div>
                 <h1>Sign Up Page</h1>
-
+                <p id='signErorr'></p>
                 <form>
                     <label>
                         Email:
