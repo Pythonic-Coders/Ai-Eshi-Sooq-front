@@ -23,15 +23,12 @@ export default function ProductListPage(props) {
                     </div>
                 </section>
                 <div className={styles.mainDivTitle}>
-                    <h1 className={styles.mainTitle}>Houses</h1>
+                    <h1 className={styles.mainTitle}>Products</h1>
                 </div>
                 <section className={styles.mainContents}>
                     <div className={styles.mainItmes}>
 
-                        {/* <h1 className={styles.mainTitle}>Houses</h1> */}
-                        {/* { mocData.map( data => <ProductDiv item={data} />) } */}
-
-                        {/* { props.resData.map( data  =>  <ProductDiv item={data} />  ) } */}
+                      
                         {props.resData.map(data => { if (data.category == props.cat) return <ProductDiv item={data} /> })}
                     </div>
                 </section>
