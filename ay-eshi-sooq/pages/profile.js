@@ -82,9 +82,10 @@ class UserProfile extends React.Component {
                                             </div>
                                         </div>
                                         <div className={stylesProfile.mainDivBtn}>
+                                            <Link  key={post.id} href='pages/user-posts/[id].js' as={`/user-posts/${post.id}`}>
                                             <button className={stylesProfile.mainBtn1}>Edit</button>
+                                            </Link>
                                         </div>
-                                        {/* </Link> */}
                                     </>
                                 )
                             }

@@ -1,5 +1,6 @@
 import styles from '../styles/Styles.module.css'
 import Link from 'next/link'
+import LogOut from '../pages/logout'
 
 export default function Header() {
     let isLoggedIn = false;
@@ -68,8 +69,8 @@ export default function Header() {
                                     <Link href="/profile">
                                         <a className={styles.headerLink1}>Profile</a>
                                     </Link>
-                                    <Link href="/logout">
-                                        <a className={styles.headerLink1}>Logout</a>
+                                    <Link href="/">
+                                        <a className={styles.headerLink1}><LogOut/></a>
                                     </Link>
                                 </div>
                             </div>

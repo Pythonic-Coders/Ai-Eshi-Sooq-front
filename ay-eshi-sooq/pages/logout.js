@@ -12,7 +12,8 @@ export default class LogOut extends React.Component{
     }
     render(){
         return(
-            <input type='submit' onClick={this.handelLogOut} value='Log Out'/>
+            // <input type='submit' onClick={this.handelLogOut} value='Log Out'/>
+            <a onClick={this.handelLogOut}>Logout</a>
         )
     }
 
