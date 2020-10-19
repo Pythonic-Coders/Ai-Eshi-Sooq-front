@@ -8,7 +8,7 @@ export default function Header() {
                 <div className={styles.headerLogoLink}>
                     <Link href="/">
                         <a>
-                            <img src="https://www.freelogodesign.org/file/app/client/thumb/60d768a5-2396-4083-a549-3de683eaf622_200x200.png?1602766316569" className={styles.headerLogo} />
+                            <img src="https://www.freelogodesign.org/file/app/client/thumb/5c9c1437-f18a-4c54-a3db-c9bdf801b09d_200x200.png?1603095724391" className={styles.headerLogo} />
                         </a>
                     </Link>
                 </div>
