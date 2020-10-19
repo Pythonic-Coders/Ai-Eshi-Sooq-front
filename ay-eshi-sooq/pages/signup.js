@@ -1,77 +1,17 @@
-const { Component } = require("react");
-import React from 'react';
+import Head from 'next/head'
+import Signup from '../components/Signup'
+import Link from 'next/link'
+import styles from '../styles/Home.module.css'
 
-export default class Signup extends React.Component {
-
-
-    state = {
-        credentials:{
-            email:'',
-            username:'',
-            password:''
-        }
-    }
-
-    signup = event => {
-        event.preventDefault();
-        // console.log(this.state.credentials);
-        fetch('https://ai-eshi-sooq-api.herokuapp.com/api/v1/post/user/',{
-            method:'Post',
-            headers:{'Content-Type': 'application/json'},
-            body: JSON.stringify(this.state.credentials)
-        })
-        .then(data => data.json())
-        .then(data =>{
-            if(data.ok){
-
-                window.location.href = '/login';
-                console.log(data)
-            }else{
-                throw new Error('this username already taken ');
-            }
-        }).catch((error) => {
-            console.error(error)
-            // alert(error);
-            document.getElementById('signErorr').innerHTML = error
-        })
-            
-    }
-
-
-    inputChanged = event => {
-        const cred = this.state.credentials;
-        cred[event.target.name] = event.target.value;
-        this.setState({credentials: cred});
-
-    }
-
-    render() {
-        return(
-            <div>
-                <h1>Sign Up Page</h1>
-                <p id='signErorr'></p>
-                <form>
-                    <label>
-                        Email:
-                        <input type='email' name='email' value={this.state.credentials.email}
-                        onChange={this.inputChanged}></input>
-                    </label>
-                    <br/>
-                    <label>
-                        Username:
-                        <input type='text' name='username' value={this.state.credentials.username}
-                        onChange={this.inputChanged}></input>
-                    </label>
-                    <br/>
-                    <label>
-                        Password:
-                        <input type='password' name='password' value={this.state.credentials.password}
-                        onChange={this.inputChanged}></input>
-                    </label>
-                    <br/>
-                    <button type='submit' onClick={this.signup}>Sign Up</button>
-                </form>
-            </div>
-        )
-    }
+export default function Home() {
+  return (
+    <div className={styles.container}>
+      <Head>
+        <title>Ai Eshi Sooq - Signup</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"></link>
+      </Head>
+      <Signup/>
+    </div>
+  )
 }
