@@ -1,0 +1,94 @@
+.mainTitle{
+    color: #e78200;
+    font-family: 'Mukta', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.mainContents{
+    margin: 50px 150px;
+}
+.mainPost{
+    display: flex;
+    background-color: #ffffff;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.mainDiv1{
+    padding: 50px;
+}
+.mainInfo{
+    margin: 38px 20px;
+}
+.mainInputs{
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    margin: 5px 0 5px 5px;
+    width: 250px;
+}
+.mainInputs1{
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    margin: 30px 20px;
+    margin-bottom: 5px;
+    width: 250px;
+}
+.mainInputs2{
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0 5px 20px;
+    width: 250px;
+}
+.divInputs{
+    margin: -95px 0 0 290px;
+    width: 300px;
+}
+.mainBtn{
+    background-color: #ffffff;
+    border: 1px solid #e78200;
+    border-radius: 5px;
+    color: #e78200;
+    cursor: pointer;
+    font-size: 18px;
+    height: 30px;
+    width: 150px;
+    margin: 5px 220px;
+}
+.mainBtn:hover{
+    background-color: #ffffff;
+    border: 1px solid rgba(3, 3, 3, .5);
+    color: rgba(3, 3, 3, .5);
+}
+.mainUserPosts{
+    border-bottom-left-radius: 20px;
+    box-shadow: rgba(25, 42, 70, 0.13) -8px 12px 18px 0px;
+    margin: 0 170px;
+}
+.mainImg{
+    border-bottom-left-radius: 20px;
+    height: 380px;
+    width: 50%;
+}
+.mainDivBtn{
+    margin: -116px 390px 100px;
+}
+.mainBtn1{
+    background-color: #ffffff;
+    border: 1px solid #e78200;
+    border-radius: 5px;
+    color: #e78200;
+    cursor: pointer;
+    font-size: 18px;
+    height: 30px;
+    width: 150px;
+    margin: 5px 220px;
+}
+.mainBtn1:hover{
+    background-color: #ffffff;
+    border: 1px solid rgba(3, 3, 3, .5);
+    color: rgba(3, 3, 3, .5);
+}

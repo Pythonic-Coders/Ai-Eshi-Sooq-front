@@ -1,5 +1,6 @@
 import styles from '../styles/Styles.module.css'
 import Link from 'next/link'
+import LogOut from '../pages/logout'
 
 export default function Header() {
     let isLoggedIn = false;
@@ -58,11 +59,22 @@ export default function Header() {
                     
                     {(() => {
                         if (isLoggedIn) {
-                        return (
-                            <Link href="/user-profile">
-                                <a className={styles.headerLink}>{username}</a>
-                            </Link>
-                        )
+                            return (
+                                // <Link href="/user-profile">
+                                //     <a className={styles.headerLink}>{username}</a>
+                                // </Link>
+                                <div className={styles.dropdown}>
+                                <a className={styles.headerLink1}>{username}</a>
+                                <div className={styles.dropdownContent}>
+                                    <Link href="/profile">
+                                        <a className={styles.headerLink1}>Profile</a>
+                                    </Link>
+                                    <Link href="/">
+                                        <a className={styles.headerLink1}><LogOut/></a>
+                                    </Link>
+                                </div>
+                            </div>
+                            )
                         }else {
                             return (
                                 <>
