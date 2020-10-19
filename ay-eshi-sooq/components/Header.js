@@ -28,16 +28,17 @@ export default function Header() {
                     <div className={styles.dropdown}>
                         <a className={styles.headerLink1}>Categories</a>
                         <div className={styles.dropdownContent}>
-                            <Link href="/accessories">
-                                <a className={styles.headerLink1}>Accessories</a>
+
+
+                            <Link href="/ComputersAndLaptops"  >
+                                <a className={styles.headerLink1}>Computers and laptops</a>
                             </Link>
-                            <Link href="/cars">
+
+                            <Link href="/Cars" >
                                 <a className={styles.headerLink1}>Cars</a>
                             </Link>
-                            <Link href="/clothes">
-                                <a className={styles.headerLink1}>Clothes</a>
-                            </Link>
-                            <Link href="/electronics">
+                            
+                            <Link href="/Electronics">
                                 <a className={styles.headerLink1}>Electronics</a>
                             </Link>
                             <Link href={{
@@ -46,12 +47,12 @@ export default function Header() {
                             }}>
                                 <a className={styles.headerLink1}>Houses</a>
                             </Link>
-                            <Link href="/shoes">
-                                <a className={styles.headerLink1}>Shoes</a>
+                            <Link href="/HouseTools">
+                                <a className={styles.headerLink1}>House Tools</a>
                             </Link>
-                            {/* <Link href="/watches">
-                                <a className={styles.headerLink1}>Watches</a>
-                            </Link> */}
+                            <Link href="/Furniture">
+                                <a className={styles.headerLink1}>Furniture</a>
+                            </Link>
                         </div>
                     </div>
                     

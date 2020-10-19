@@ -16,8 +16,8 @@ export default function Main(props) {
             <section className={styles.mainContents}>
                 <div className={styles.mainDivContents}>
                     <div className={styles.mainCategories}>
-                        <Link href="/Accessories">
-                            <h1 className={styles.mainTitle1}>Accessories</h1>
+                        <Link href="/ComputersAndLaptops">
+                            <h1 className={styles.mainTitle1}>Computers And Laptops</h1>
                         </Link>
                     </div>
                     <div className={styles.mainCategories1}>
@@ -28,8 +28,8 @@ export default function Main(props) {
                 </div>
                 <div className={styles.mainDivContents}>
                     <div className={styles.mainCategories2}>
-                        <Link href="/Clothes">
-                            <h1 className={styles.mainTitle1}>Clothes</h1>
+                        <Link href="/HouseTools">
+                            <h1 className={styles.mainTitle1}>House Tools</h1>
                         </Link>
                     </div>
                     <div className={styles.mainCategories3}>
@@ -49,8 +49,8 @@ export default function Main(props) {
                         </Link>
                     </div>
                     <div className={styles.mainCategories5}>
-                        <Link href="/Shose">
-                            <h1 className={styles.mainTitle1}>Shoes</h1>
+                        <Link href="/Furniture">
+                            <h1 className={styles.mainTitle1}>Furniture</h1>
                         </Link>
                     </div>
                 </div>
