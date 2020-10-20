@@ -1,5 +1,6 @@
 import styles from '../styles/SignupAndLogin.module.css'
 import Link from 'next/link'
+// import Login from '../pages/login'
 const { Component } = require("react");
 import React from 'react';
 
@@ -24,16 +25,12 @@ export default class Signup extends React.Component {
         })
             .then(data => data.json())
             .then(data => {
-                if (data.ok) {
-
+                if (data.id) {
                     window.location.href = '/login';
-                    console.log(data)
                 } else {
                     throw new Error('this username already taken');
                 }
             }).catch((error) => {
-                console.error(error)
-                // alert(error);
                 document.getElementById('signErorr').innerHTML = error
             })
 

@@ -67,7 +67,6 @@ class UserProfile extends React.Component {
                     <div className={stylesProfile.mainUserPosts}>
                         {/* <h3>My Posts</h3> */}
                         {/* <section className={styles.mainContents}> */}
-
                         {this.state.posts.map(post => {
                             if (post.user_id == this.state.user_id) {
                                 return (
@@ -91,7 +90,6 @@ class UserProfile extends React.Component {
                                 )
                             }
                         })}
-
                         {/* </section> */}
                     </div>
                 </main>
