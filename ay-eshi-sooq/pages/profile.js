@@ -53,7 +53,7 @@ class UserProfile extends React.Component {
                 </Head>
                 <Header />
                 <main>
-                    <h1 className={stylesProfile.mainTitle}>Welcome Backe {this.state.username}</h1>
+                    <h1 className={stylesProfile.mainTitle}>Welcome Back <span className={stylesProfile.mainUser}>{this.state.username}</span></h1>
                     <section className={stylesProfile.mainContents}>
                         <Profile />
                         {/* <LogOut />
@@ -63,6 +63,7 @@ class UserProfile extends React.Component {
                         {/* <LogOut /> */}
                         {/* <button><LogOut /></button> */}
                     </section>
+                    <h1 className={stylesProfile.mainTitle}>My Adds</h1>
                     <div className={stylesProfile.mainUserPosts}>
                         {/* <h3>My Posts</h3> */}
                         {/* <section className={styles.mainContents}> */}
@@ -82,8 +83,8 @@ class UserProfile extends React.Component {
                                             </div>
                                         </div>
                                         <div className={stylesProfile.mainDivBtn}>
-                                            <Link  key={post.id} href='pages/user-posts/[id].js' as={`/user-posts/${post.id}`}>
-                                            <button className={stylesProfile.mainBtn1}>Edit</button>
+                                            <Link key={post.id} href='pages/user-posts/[id].js' as={`/user-posts/${post.id}`}>
+                                                <button className={stylesProfile.mainBtn1}>Edit</button>
                                             </Link>
                                         </div>
                                     </>

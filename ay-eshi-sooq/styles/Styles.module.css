@@ -95,8 +95,7 @@
     /* width: 100%; */
 }
 .mainHeroContainerHouses{
-    /* background-image: url(https://blog.murdochs.net.au/wp-content/uploads/2018/04/0Q1A9705.jpg); */
-    background-image: url(../bg.JPG);
+    background-image: url(https://images.pexels.com/photos/2954405/pexels-photo-2954405.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
@@ -443,7 +442,7 @@
     margin: -8px 0;
     padding: 0 8px;
     text-decoration: none;
-    width: 82px;
+    /* width: 82px; */
 }
 .footerLink:hover{
     color: #e78200;
