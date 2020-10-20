@@ -283,6 +283,16 @@
     border-bottom-left-radius: 20px;
     box-shadow: rgba(25, 42, 70, 0.13) -8px 12px 18px 0px;
 }
+.mainDiv1{
+    /*border: 1px solid; */
+    margin: 50px 20px;
+    height: 320px;
+    /* width: 50%; */
+    background-color: #f5f5f5;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: rgba(25, 42, 70, 0.13) -8px 12px 18px 0px;
+}
 .mainProductName{
     color: #e78200;
     display: -webkit-box;

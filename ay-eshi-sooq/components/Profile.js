@@ -49,7 +49,8 @@ export default class UserPostCreate extends React.Component {
 
         const response = await axios.post(url, this.state)
         // router.push('/');
-        window.location.href = '/profile';
+        // window.location.href = '/profile';
+        window.location.assign('/profile');
         console.log(this.state)
     }
 

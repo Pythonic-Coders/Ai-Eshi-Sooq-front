@@ -49,7 +49,7 @@ export default class Details extends React.Component {
                     <section className={styles.mainContents}>
                         <div className={styles.mainItmes}>
                             {/* {<ProductDiv item={props.resData} />} */}
-                            <div className={styles.mainDiv}>
+                            <div className={styles.mainDiv1}>
                                 <div className={stylesProdects.mainPost}>
                                     <img src={this.props.postData.post_img} className={stylesProdects.mainImg} />
                                     <div className={stylesProdects.mainInfo}>
