@@ -30,7 +30,7 @@ export default class UserPostDetails extends React.Component {
         // console.log(props.userpost.id)
         const response = await axios.delete(url)
         // router.push('/user-profile');
-        window.location.href = '/user-profile';
+        window.location.href = '../profile';
     }
 
     inputChanged = event => {
@@ -46,7 +46,7 @@ export default class UserPostDetails extends React.Component {
         // const router = useRouter();
         const response = await axios.put(url, this.state)
         // router.push('/');
-        window.location.href = '/user-profile';
+        window.location.href = '../profile';
     }
 
     render() {

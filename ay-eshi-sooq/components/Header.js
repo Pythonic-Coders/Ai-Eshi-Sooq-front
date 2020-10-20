@@ -30,18 +30,22 @@ export default function Header() {
                         <a className={styles.headerLink1}>Categories</a>
                         <div className={styles.dropdownContent}>
 
+                            <Link href="/Cars" >
+                                <a className={styles.headerLink1}>Cars</a>
+                            </Link>
 
                             <Link href="/ComputersAndLaptops"  >
                                 <a className={styles.headerLink1}>Computers and laptops</a>
-                            </Link>
-
-                            <Link href="/Cars" >
-                                <a className={styles.headerLink1}>Cars</a>
                             </Link>
                             
                             <Link href="/Electronics">
                                 <a className={styles.headerLink1}>Electronics</a>
                             </Link>
+                            
+                            <Link href="/Furniture">
+                                <a className={styles.headerLink1}>Furniture</a>
+                            </Link>
+                            
                             <Link href={{
                                 pathname: '/[productListPage]',
                                 query: { productListPage: 'Houses' }
@@ -50,9 +54,6 @@ export default function Header() {
                             </Link>
                             <Link href="/HouseTools">
                                 <a className={styles.headerLink1}>House Tools</a>
-                            </Link>
-                            <Link href="/Furniture">
-                                <a className={styles.headerLink1}>Furniture</a>
                             </Link>
                         </div>
                     </div>

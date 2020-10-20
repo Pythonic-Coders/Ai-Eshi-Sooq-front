@@ -16,17 +16,17 @@ export default function Footer() {
                 {/* <div className={styles.footerDiv}></div> */}
                 <nav className={styles.footerNav}>
                     <h4 className={styles.footerTitle}>Categories</h4>
-                    <Link href="/accessories">
-                        <a className={styles.footerLink}>Accessories</a>
-                    </Link>
                     <Link href="/cars">
                         <a className={styles.footerLink}>Cars</a>
                     </Link>
-                    <Link href="/clothes">
-                        <a className={styles.footerLink}>Clothes</a>
+                    <Link href="/ComputersAndLaptops">
+                        <a className={styles.footerLink}>Computers and laptops</a>
                     </Link>
                     <Link href="/electronics">
                         <a className={styles.footerLink}>Electronics</a>
+                    </Link>
+                    <Link href="/Furniture">
+                        <a className={styles.footerLink}>Furniture</a>
                     </Link>
                     <Link href={{
                         pathname: '/[productListPage]',
@@ -34,8 +34,8 @@ export default function Footer() {
                     }}>
                         <a className={styles.footerLink}>Houses</a>
                     </Link>
-                    <Link href="/shoes">
-                        <a className={styles.footerLink}>Shoes</a>
+                    <Link href="/HouseTools">
+                        <a className={styles.footerLink}>House Tools</a>
                     </Link>
                 </nav>
                 <nav className={styles.footerNav}>
