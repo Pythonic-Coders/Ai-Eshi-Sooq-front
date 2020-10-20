@@ -43,16 +43,10 @@ export default class UserPostCreate extends React.Component {
 
     }
 
-    // getUserId(){
-    //     if (process.browser){
-    //         const userId = JSON.parse(localStorage.getItem('user_Id'))
-    //         this.setState({user_id: userId})
-    //     }
-    // }
 
     async postHandler() {
         const url = `https://ai-eshi-sooq-api.herokuapp.com/api/v1/post/posts/`;
-        // const router = useRouter();
+
         const response = await axios.post(url, this.state)
         // router.push('/');
         window.location.href = '/profile';

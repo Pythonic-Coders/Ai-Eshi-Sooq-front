@@ -41,11 +41,11 @@ export default class Details extends React.Component {
                 <Header />
 
                 <main>
-                    {/* <section className={styles.mainHeroImgs}>
+                    <section className={styles.mainHeroImgs}>
                         <div className={styles.mainHeroContainerHouses}>
                             <div className={styles.mainHeroTitle}></div>
                         </div>
-                    </section> */}
+                    </section>
                     <section className={styles.mainContents}>
                         <div className={styles.mainItmes}>
                             {/* {<ProductDiv item={props.resData} />} */}
