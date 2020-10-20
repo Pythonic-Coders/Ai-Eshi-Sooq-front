@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import styles from '../../styles/updatePosts.module.css'
+import stylesProfile from '../../styles/Profile.module.css'
+import stylesProdects from '../../styles/Products.module.css'
 import { useRouter } from 'next/router'
 import axios from 'axios'
 import React from 'react'
@@ -23,12 +25,13 @@ export default class UserPostDetails extends React.Component {
 
 
     async deleteHandler(event) {
-            const url = `https://ai-eshi-sooq-api.herokuapp.com/api/v1/post/${this.props.userpost.id}/`;
-            const response = await axios.delete(url)
-            // console.log(response)
-            
-            window.location.href = '../profile';
-        
+        const url = `https://ai-eshi-sooq-api.herokuapp.com/api/v1/post/${this.props.userpost.id}/`;
+        const response = await axios.delete(url)
+        // console.log(response)
+
+        window.location.href = '../profile';
+        // window.location.assign('../profile');
+
     }
 
     inputChanged = event => {
@@ -43,6 +46,7 @@ export default class UserPostDetails extends React.Component {
         const url = `https://ai-eshi-sooq-api.herokuapp.com/api/v1/post/${this.props.userpost.id}/`;
         const response = await axios.put(url, this.state)
         window.location.href = '../profile';
+        // window.location.assign('../profile');
     }
 
     render() {
@@ -56,7 +60,7 @@ export default class UserPostDetails extends React.Component {
                 </Head>
                 <Header />
                 <main>
-                    <div className={styles.global}>
+                    {/* <div className={styles.global}>
                         <section className={styles.mainContent}>
                             <img src={this.state.post_img} />
                             <form onSubmit={() => this.updateHandler(this.props.userpost.id)} >
@@ -96,7 +100,66 @@ export default class UserPostDetails extends React.Component {
                             <button onClick={() => this.deleteHandler(this.props.userpost.id)} className={styles.update_button}>Delete</button>
 
                         </section>
+                    </div> */}
+                    <section className={stylesProfile.mainContents}>
+                    <div className={stylesProfile.mainDiv}>
+                        <form onSubmit={() => this.updateHandler(this.props.userpost.id)}>
+                            <div className={stylesProfile.mainPost}>
+                                {/* <label>
+                    Image Link: */}
+                                <input type='text' name='post_img' onChange={this.inputChanged} placeholder="Image Link" className={stylesProfile.mainInputs, stylesProdects.mainImg} value={this.state.post_img} />
+                                {/* </label>*/}
+                                {/* <br /> */}
+                                {/* <label>
+                    Ads Title: */}
+                                <div className={stylesProfile.mainInfo}>
+                                    <h1 className={stylesProfile.mainFormTitle}>What do you want to edit ...</h1>
+                                    <input type='text' name='post_title' onChange={this.inputChanged} placeholder="Title" className={stylesProfile.mainInputs, stylesProfile.mainInputs1} value={this.state.post_title} />
+                                    {/* </label>*/}
+                                    {/* <br /> */}
+                                    {/* <label>
+                    Category: */}
+                                    {/* <input type='text' name='category' onChange={this.inputChanged} placeholder="Category" className={stylesProfile.mainInputs} /> */}
+                                    <select className={stylesProfile.mainInputs} onChange={this.inputChanged} name="category" required>
+                                        <option value={this.state.category}   selected="selected">{this.state.category}</option>
+                                        <option value="Cars">Cars</option>
+                                        <option value="ComputersAndLaptops">Computers and Laptops</option>
+                                        <option value="Electronics">Electronics</option>
+                                        <option value="Furniture">Furniture</option>
+                                        <option value="Houses">Houses</option>
+                                        <option value="HouseTools">Houses Tools</option>
+                                        <option>Others</option>
+                                    </select>
+                                    {/* </label>*/}
+                                    <br />
+                                    {/* <label>
+                    Description: */}
+                                    <textarea name='post_description' rows="5" cols="50" onChange={this.inputChanged} placeholder="Description" className={stylesProfile.mainInputs2} value={this.state.post_description}>
+                                    </textarea>
+                                    {/* </label>
+                <label>
+            Price: */}
+                                    <br />
+                                    <div className={stylesProfile.divInputs}>
+                                        <input type='text' name='price' onChange={this.inputChanged} placeholder="Price" className={stylesProfile.mainInputs} value={this.state.price} />
+                                        {/* </label>
+                <label>
+            Phone Number */}
+                                        <br />
+                                        <input type='text' name='phone_number' onChange={this.inputChanged} placeholder="Phone Number" className={stylesProfile.mainInputs} value={this.state.phone_number} />
+                                        {/* </label>*/}
+                                    </div>
+                                    <br />
+                                    {/* <input type='submit' value='Post' /> */}
+                                    <button type='submit' value='Update' className={stylesProfile.mainUpdateBtn}>Update</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div className={stylesProfile.mainDeleteBtn}>
+                            <button onClick={() => this.deleteHandler(this.props.userpost.id)} className={stylesProfile.mainBtn}>Delete</button>
+                        </div>
                     </div>
+                    </section>
                 </main>
                 <Footer />
             </div>

@@ -55,7 +55,7 @@ export default function Footer() {
                 </nav>
                 <div className={styles.footerSocialPart}>
                     <nav className={styles.footerNav}>
-                        <h4 className={styles.footerTitle}>Follow Us Throgh</h4>
+                        <h4 className={styles.footerTitle}>Follow Us Through</h4>
                         <div className={styles.footerSocialIcons}>
                             <Link href="https://facebook.com">
                                 <a target="_blank">

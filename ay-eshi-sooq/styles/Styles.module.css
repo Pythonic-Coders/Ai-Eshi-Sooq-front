@@ -277,7 +277,17 @@
     /* border: 1px solid; */
     margin: 50px 20px;
     height: 320px;
-    /* width: 80%; */
+    width: 242px;
+    background-color: #f5f5f5;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: rgba(25, 42, 70, 0.13) -8px 12px 18px 0px;
+}
+.mainDiv1{
+    /*border: 1px solid; */
+    margin: 50px 20px;
+    height: 320px;
+    /* width: 50%; */
     background-color: #f5f5f5;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -326,7 +336,7 @@
     cursor: pointer;
     font-size: 12px;
     height: 25px;
-    margin: 5px 75px;
+    margin: 5px 68px;
     margin-right: 5px;
 }
 .mainDetailbtn:hover{
@@ -479,7 +489,7 @@
     margin: 68px -25px;
 }
 .footerSocialIcons{
-    margin: 25px;
+    margin: 25px 35px;
 }
 .footerIcon{
     border-radius: 50%;

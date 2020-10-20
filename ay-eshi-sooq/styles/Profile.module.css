@@ -30,6 +30,13 @@
     border-top-right-radius: 20px;
     margin-bottom: 20px;
 }
+.mainFormTitle{
+    color: rgba(3, 3, 3, .5);
+    font-size: 15px;
+    font-weight: lighter;
+    margin: -5px;
+    text-align: center;
+}
 .mainDiv1{
     padding: 50px;
 }
@@ -39,7 +46,7 @@
 .mainOption{
     border: none;
     color: rgba(3, 3, 3, .5);
-
+    line-height: 1.5;
     text-align: center;
 }
 .mainInputs{
@@ -114,4 +121,25 @@
     background-color: #ffffff;
     border: 1px solid rgba(3, 3, 3, .5);
     color: rgba(3, 3, 3, .5);
+}
+.mainUpdateBtn{
+    background-color: #ffffff;
+    border: 1px solid #e78200;
+    border-radius: 5px;
+    color: #e78200;
+    cursor: pointer;
+    font-size: 18px;
+    height: 30px;
+    width: 150px;
+    margin: 5px 125px;
+}
+.mainUpdateBtn:hover{
+    background-color: #ffffff;
+    border: 1px solid rgba(3, 3, 3, .5);
+    color: rgba(3, 3, 3, .5);
+}
+.mainDeleteBtn{
+    margin: -111.2px 0;
+    margin-left: 655px;
+    width: 0px;
 }

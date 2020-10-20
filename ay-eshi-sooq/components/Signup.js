@@ -51,7 +51,7 @@ export default class Signup extends React.Component {
                     <div className={styles.mainSinup}>
                         {/* <img src="https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/ecom-options-og.jpg"/> */}
                         <h1 className={styles.mainTitle}>Ay Eshi Sooq</h1>
-                        <p className={styles.mainIntro}>To be one of our family and be ableto display your things for sale, You've to sign up first</p>
+                        <p className={styles.mainIntro}>To be one of our family and be able to display your things for sale, You've to sign up first</p>
                         <p id='signErorr' className={styles.mainError}></p>
                         <form className={styles.mainForm}>
                             {/* <label>
