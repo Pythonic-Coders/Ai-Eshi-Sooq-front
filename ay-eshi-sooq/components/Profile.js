@@ -63,7 +63,6 @@ export default class UserPostCreate extends React.Component {
 
         return (
             <div className={stylesProfile.mainDiv}>
-                {/* <h1>{this.state.user_id}</h1> */}
                 <form onSubmit={() => this.postHandler()}>
                     <div className={stylesProfile.mainPost}>
                         {/* <label>
@@ -74,6 +73,7 @@ export default class UserPostCreate extends React.Component {
                         {/* <label>
                     Ads Title: */}
                         <div className={stylesProfile.mainInfo}>
+                            <h1 className={stylesProfile.mainFormTitle}>What do you want to sell ...</h1>
                             <input type='text' name='post_title' onChange={this.inputChanged} placeholder="Title" className={stylesProfile.mainInputs, stylesProfile.mainInputs1} />
                             {/* </label>*/}
                             {/* <br /> */}

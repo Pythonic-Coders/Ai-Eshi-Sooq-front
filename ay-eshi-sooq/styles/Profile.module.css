@@ -30,6 +30,13 @@
     border-top-right-radius: 20px;
     margin-bottom: 20px;
 }
+.mainFormTitle{
+    color: rgba(3, 3, 3, .5);
+    font-size: 15px;
+    font-weight: lighter;
+    margin: -5px;
+    text-align: center;
+}
 .mainDiv1{
     padding: 50px;
 }
@@ -39,7 +46,7 @@
 .mainOption{
     border: none;
     color: rgba(3, 3, 3, .5);
-
+    line-height: 1.5;
     text-align: center;
 }
 .mainInputs{
