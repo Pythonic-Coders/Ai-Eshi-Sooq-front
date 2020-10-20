@@ -55,13 +55,14 @@ export default class UserPostCreate extends React.Component {
         // const router = useRouter();
         const response = await axios.post(url, this.state)
         // router.push('/');
-        window.location.href = '/user-profile';
+        window.location.href = '/profile';
+        console.log(this.state)
     }
 
     render() {
 
         return (
-            <div className={styles.mainDiv}>
+            <div className={stylesProfile.mainDiv}>
                 {/* <h1>{this.state.user_id}</h1> */}
                 <form onSubmit={() => this.postHandler()}>
                     <div className={stylesProfile.mainPost}>
@@ -78,7 +79,17 @@ export default class UserPostCreate extends React.Component {
                             {/* <br /> */}
                             {/* <label>
                     Category: */}
-                            <input type='text' name='category' onChange={this.inputChanged} placeholder="Category" className={stylesProfile.mainInputs} />
+                            {/* <input type='text' name='category' onChange={this.inputChanged} placeholder="Category" className={stylesProfile.mainInputs} /> */}
+                            <select className={stylesProfile.mainInputs} onChange={this.inputChanged} name="category" required>
+                                <option placeholder="--- Choose a category ---">--- Choose a category ---</option>
+                                <option value="Cars">Cars</option>
+                                <option value="ComputersAndLaptops">Computers and Laptops</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Furniture">Furniture</option>
+                                <option value="Houses">Houses</option>
+                                <option value="HouseTools">Houses Tools</option>
+                                <option>Others</option>
+                            </select>
                             {/* </label>*/}
                             <br />
                             {/* <label>
