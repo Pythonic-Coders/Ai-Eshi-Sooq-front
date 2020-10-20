@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '../../styles/updatePosts.module.css'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import axios from 'axios'
 import React from 'react'
@@ -23,14 +22,13 @@ export default class UserPostDetails extends React.Component {
     }
 
 
-    async deleteHandler() {
-        const url = `https://ai-eshi-sooq-api.herokuapp.com/api/v1/post/${this.props.userpost.id}/`;
-        // const router = useRouter();
-
-        // console.log(props.userpost.id)
-        const response = await axios.delete(url)
-        // router.push('/user-profile');
-        window.location.href = '../profile';
+    async deleteHandler(event) {
+            const url = `https://ai-eshi-sooq-api.herokuapp.com/api/v1/post/${this.props.userpost.id}/`;
+            const response = await axios.delete(url)
+            // console.log(response)
+            
+            window.location.href = '../profile';
+        
     }
 
     inputChanged = event => {
@@ -43,9 +41,7 @@ export default class UserPostDetails extends React.Component {
 
     async updateHandler(event) {
         const url = `https://ai-eshi-sooq-api.herokuapp.com/api/v1/post/${this.props.userpost.id}/`;
-        // const router = useRouter();
         const response = await axios.put(url, this.state)
-        // router.push('/');
         window.location.href = '../profile';
     }
 
@@ -96,9 +92,8 @@ export default class UserPostDetails extends React.Component {
                                 <input type='text' name='phone_number' value={this.state.phone_number} onChange={this.inputChanged} />
                                 <br />
                                 <button type='submit' value='Update' className={styles.update_button}>Update</button>
-                                <button onClick={() => this.deleteHandler(this.props.userpost.id)} className={styles.update_button}>Delete</button>
-
                             </form>
+                            <button onClick={() => this.deleteHandler(this.props.userpost.id)} className={styles.update_button}>Delete</button>
 
                         </section>
                     </div>
