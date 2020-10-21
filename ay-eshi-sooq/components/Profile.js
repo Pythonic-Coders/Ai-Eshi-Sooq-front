@@ -43,26 +43,21 @@ export default class UserPostCreate extends React.Component {
 
     }
 
-    // getUserId(){
-    //     if (process.browser){
-    //         const userId = JSON.parse(localStorage.getItem('user_Id'))
-    //         this.setState({user_id: userId})
-    //     }
-    // }
 
     async postHandler() {
         const url = `https://ai-eshi-sooq-api.herokuapp.com/api/v1/post/posts/`;
-        // const router = useRouter();
+
         const response = await axios.post(url, this.state)
         // router.push('/');
-        window.location.href = '/user-profile';
+        // window.location.href = '/profile';
+        window.location.assign('/profile');
+        console.log(this.state)
     }
 
     render() {
 
         return (
-            <div className={styles.mainDiv}>
-                {/* <h1>{this.state.user_id}</h1> */}
+            <div className={stylesProfile.mainDiv}>
                 <form onSubmit={() => this.postHandler()}>
                     <div className={stylesProfile.mainPost}>
                         {/* <label>
@@ -73,12 +68,23 @@ export default class UserPostCreate extends React.Component {
                         {/* <label>
                     Ads Title: */}
                         <div className={stylesProfile.mainInfo}>
+                            <h1 className={stylesProfile.mainFormTitle}>What do you want to sell ...</h1>
                             <input type='text' name='post_title' onChange={this.inputChanged} placeholder="Title" className={stylesProfile.mainInputs, stylesProfile.mainInputs1} />
                             {/* </label>*/}
                             {/* <br /> */}
                             {/* <label>
                     Category: */}
-                            <input type='text' name='category' onChange={this.inputChanged} placeholder="Category" className={stylesProfile.mainInputs} />
+                            {/* <input type='text' name='category' onChange={this.inputChanged} placeholder="Category" className={stylesProfile.mainInputs} /> */}
+                            <select className={stylesProfile.mainInputs} onChange={this.inputChanged} name="category" required>
+                                <option placeholder="--- Choose a category ---">--- Choose a category ---</option>
+                                <option value="Cars">Cars</option>
+                                <option value="ComputersAndLaptops">Computers and Laptops</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Furniture">Furniture</option>
+                                <option value="Houses">Houses</option>
+                                <option value="HouseTools">Houses Tools</option>
+                                <option>Others</option>
+                            </select>
                             {/* </label>*/}
                             <br />
                             {/* <label>

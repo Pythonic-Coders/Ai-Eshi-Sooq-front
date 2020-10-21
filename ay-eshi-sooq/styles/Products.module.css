@@ -3,11 +3,12 @@
 }
 .mainImg{
     border-bottom-left-radius: 20px;
-    height: 300px;
+    height: 320px;
     width: 50%;
 }
 .mainInfo{
     margin: -15px 20px;
+    width: 50%;
 }
 .mainTitle{
     color: #e78200;
